@@ -3,15 +3,15 @@ PROJECT OVERVIEW
 - then reference this module from your root module. Here's the structure:
 
 terraform-module-project/
-├──init-main.tf
-├── modules/
-│   └── instances/
-│       ├── main.tf
-│       ├── outputs.tf
-│       ├── variables.tf
-└── init-outputs.tf
+init-main.tf
+modules/instances/
+- main.tf
+- outputs.tf
+- variables.tf
+init-outputs.tf
 
 ROLES OF DIRECTORIES AND FILES
+
 Module Directory (modules/instances/):
 - main.tf: This file defines the "aws_instance" resource and uses the count parameter to create three instances, 
   the "instance_names" variable is used to set the Name tag for each instance.
