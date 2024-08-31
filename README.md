@@ -12,13 +12,13 @@ terraform-module-project/
 └── init-outputs.tf
 
 ROLES OF DIRECTORIES AND FILES
-	Module Directory (modules/instances/):
+Module Directory (modules/instances/):
 - main.tf: This file defines the "aws_instance" resource and uses the count parameter to create three instances, 
   the "instance_names" variable is used to set the Name tag for each instance.
 - variables.tf: This file defines the variables for the AMI ID, instance type, and instance names.
 - outputs.tf: This file defines the output that includes the instance names, IDs, and public IPs.
 
-	Root Directory (terraform-module-project/)
+Root Directory (terraform-module-project/)
 - init-main.tf: the file calls the instances module, passing in the required variables like the AMI ID, instance type, and a list of instance names.
 - init-outputs.tf: the file defines an output that references the output from the instances module.
 
