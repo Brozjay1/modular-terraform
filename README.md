@@ -3,12 +3,12 @@ PROJECT OVERVIEW
 - then reference this module from your root module. Here's the structure:
 
 terraform-module-project/
-init-main.tf
-modules/instances/
-- main.tf
-- outputs.tf
-- variables.tf
-init-outputs.tf
+|init-main.tf
+|modules/instances/
+ - main.tf
+ - outputs.tf
+ - variables.tf
+|init-outputs.tf
 
 ROLES OF DIRECTORIES AND FILES
 
